@@ -1,0 +1,15 @@
+# Lovelace Card per mostrare raccolta differenziata
+# Da inserire dentro la sezione views:
+views:
+- title: Raccolta Differenziata
+  icon: mdi:recycle
+  cards:
+    - type: entities
+      title: Raccolta Differenziata
+      show_header_toggle: false
+      entities:
+        - sensor.giornosettimana
+        - sensor.raccoltadifferenziata
+      card:
+        type: glance
+        title: Raccolta Differenziata
